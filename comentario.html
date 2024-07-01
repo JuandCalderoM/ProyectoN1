@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header init">
+        <div class="content content-header">
+            <div class="barra">
+                <a href="index.html"> <img src="imagenes/logov1.png" alt="logotipo"> </a>
+                <nav class="busqueda"> 
+                  <a href="nosotros.html">Nosotros</a>
+                  <a href="anuncios.html"> Anuncios</a>
+                  <a href="blog.html"> Blog</a>
+                </nav>
+            </div> <!-- naveg-->             
+        </div>  <!-- content-->
+    </header>  
+<div class="recuadro">
+    <br>
+    <div id="comentario"  class="patron">
+        <form action="" class="form">
+            <h2 class="form_title">Envia su comentario</h2>
+            <div class="form_container">
+               <div class="form_group">
+                <input type="text" name="name" class="form_input" placeholder=" "  required onkeypress="return SoloLetras(event)">
+                <label for="Nombre" class="form_label">Nombre</label>
+                <span class="form_line"></span>
+               </div>
+            </div>
+             <br>
+            <div class="form_container">
+                <div class="form_group">
+                    <input type="emails" name="email" class="form_input" placeholder=" " required onkeypress="return Correo(event)">
+                    <label for="email" class="form_label">Correo Electronico</label>
+                    <span class="form_line"></span>
+                </div>
+            </div>
+            <br>
+            <div class="form_container">
+                <div class="form_group">
+                <input type="text" name="subject" class="form_input" placeholder=" " onkeypress="return SoloLetras(event)">
+                 <label for="subject" class="form_label">Asunto</label>
+                 <span class="form_line"></span>
+                </div>
+            </div>
+            <br>
+             <div class="form_container">
+                <div class="form_group">
+                <textarea name="comments" cols="25" rows="5" class="form_input" placeholder=" " required onkeypress="return clave(event)" ></textarea>
+                <label for="comments" class="form_label">Comentario</label>
+                <span class="form_line"></span>
+                </div>
+            </div>
+            <input type="submit" value="Enviar" class="boton boton-verc">
+        </form>
+    </div>
+    <br>
+    <script src="/js/doc.js"></script>
+</div>
+<footer class="siste-footer content">
+  <div class="content content-footer">
+    <nav class="busqueda">
+      <a href="nosotros.html">Nosotros</a>
+      <a href="anuncios.html"> Anuncios</a>
+      <a href="blog.html"> Blog</a>
+    </nav>
+    <b class="copy"> Todos los derechos reservados &copy;</b>
+  </div>
+</footer>
+</body>
+</html>
